@@ -2,6 +2,8 @@
 
 Welcome to my repository of solutions for the Advent of Code challenges, implemented in Python. This repository is organized to make it easy to navigate through different years and their respective challenges.
 
+![aoc](https://blog.pythondiscord.com/content/images/size/w2000/2021/03/AoC_banner.png)
+
 ## Repository Structure
 
 - `/data`: This directory contains input files for the challenges. They are organized by year.
