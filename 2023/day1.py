@@ -25,5 +25,5 @@ def trebuchet(filename: str) -> int:
     return sum(pairs)
 
 
-result = trebuchet("./data/day1Input.txt")
+result = trebuchet("./data/2023/day1Input.txt")
 print(result)
