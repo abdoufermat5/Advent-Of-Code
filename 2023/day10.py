@@ -51,6 +51,7 @@ def pipeMaze(filename: str) -> int:
                                 node = Node((i + x, j + y), 1, data[i + x][j + y])
                                 node.prev = source.position
                                 current.append(node)
+                    break
 
         current = current[0]
 
