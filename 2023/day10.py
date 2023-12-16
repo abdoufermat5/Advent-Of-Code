@@ -9,7 +9,13 @@ class Node:
         return f"Node(position={self.position}, min_dist={self.min_dist}, name={self.name})"
 
     def __eq__(self, other):
-        self.position = other.position
+        return self.position == other.position
+
+    def __lt__(self, other):
+        return self.position < other.position
+
+    def __gt__(self, other):
+        return self.position > other.position
 
     def __hash__(self):
         return hash(self.position)
@@ -40,6 +46,7 @@ def pipeMaze(filename: str) -> int:
         n_row = len(data)
         n_col = len(data[0])
         current = []
+        tracks = set()
 
         for i in range(n_row):
             for j in range(n_col):
@@ -56,6 +63,7 @@ def pipeMaze(filename: str) -> int:
         current = current[0]
 
         while current.name != "S":
+            tracks.add(current)
             i, j = current.position
             min_distance = current.min_dist
             name = current.name
