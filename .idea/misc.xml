@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="algorithmique" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="algorithmique" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="fermat-dev" project-jdk-type="Python SDK" />
 </project>
