@@ -1,16 +1,6 @@
 MIN_DIFF, MAX_DIFF = 1, 3
 
 
-def get_occurrences(arr: list) -> list:
-    occ = {}
-    for num in arr:
-        if num in occ:
-            occ[num] += 1
-        else:
-            occ[num] = 1
-    return list(occ.values())
-
-
 def test_increasing(arr: list) -> bool:
     for i in range(1, len(arr)):
         if MIN_DIFF <= arr[i] - arr[i - 1] <= MAX_DIFF:
