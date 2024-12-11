@@ -48,5 +48,5 @@ if __name__ == "__main__":
     print(plutonian_pebbles(data))
     print(plutonian_pebbles(data, 75))
 
-# first output: 4569
-# second output: 6456
+# first output: 202019
+# second output: 239321955280205
